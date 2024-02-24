@@ -1,0 +1,93 @@
+/*=============== SEARCH ===============*/
+const searchButton = document.getElementById('search-button')
+const searchClose = document.getElementById('search-close')
+const searchContent = document.getElementById('search-content')
+
+/*=============== search Menu ===============*/
+if(searchButton){
+    searchButton.addEventListener('click', () =>{
+        console.log('search click');
+        searchContent.classList.add('show-search')
+        searchContent.classList.remove('hide-search');
+    })
+}
+
+// ========= search hidden =============//
+if(searchClose){
+    searchClose.addEventListener('click', () =>{
+        console.log('close click');
+        searchContent.classList.add('hide-search')
+        searchContent.classList.remove('show-search');
+    })
+}
+
+
+const loginButton = document.getElementById('login-button')
+const loginClose = document.getElementById('login-close')
+const loginContent = document.getElementById('login-content')
+
+/*=============== login show ===============*/
+if(searchButton){
+    loginButton.addEventListener('click', () =>{
+        loginContent.classList.add('show-login')
+    })
+}
+
+// ========= login hidden =============//
+if(loginClose){
+    loginClose.addEventListener('click', () =>{
+        loginContent.classList.add('hide-login')
+    })
+}
+/*=============== ADD SHADOW HEADER ===============*/
+const shadowHeader = () =>{
+    const header = document.getElementById('header')
+    // when the scroll is greater than 50 
+    this.scrollY >= 50 ? header.classList.add('shadow-header')
+                        : header.classList.remove('shadow-header')
+}
+window.addEventListener('scroll', shadowHeader)
+
+// ======= home slider === //
+let swiperHome = new Swiper('.home__swiper', {
+    loop: true,
+    spaceBetween: -24,
+    slidesPerView: 'auto',
+    centeredSlides: 'auto',
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    breakpoints: {
+        1220: {
+            spaceBetween: -32,
+        }
+    }
+});
+
+
+
+/*=============== HOME SWIPER ===============*/
+
+
+/*=============== FEATURED SWIPER ===============*/
+
+
+/*=============== NEW SWIPER ===============*/
+
+
+/*=============== TESTIMONIAL SWIPER ===============*/
+
+
+/*=============== SHOW SCROLL UP ===============*/ 
+
+
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+
+
+/*=============== DARK LIGHT THEME ===============*/ 
+
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/

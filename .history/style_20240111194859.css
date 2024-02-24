@@ -1,0 +1,118 @@
+/* gg font */
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,500&family=Montserrat:wght@400;500;600&display=swap');
+:root{
+    --header-height: 3.5rem;
+        /* color */
+    --frist-color: hsl(230, 62%, 56%);
+    /* --frist-color-alt: #048654; */
+    --title-color: hsl(230, 70%, 16%);
+    --text-color: hsl(230, 16%, 45%);
+    --border-color: hsl(230,50%, 90%);
+    /* --text-color-light: #a6a6a6; */
+    --white-color: hsl(0, 0%, 100%);
+    --body-color: hsl(230, 100%,);
+    --container-color: #ffffff;
+
+
+    /* font and typography */
+    /* .5rem = 8px | 1rem = 16px ...  */
+    --body-font: 'Poppins', sans-serif;
+    --title-font: ;
+    --subtitle-font: ;
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rm;
+    --h3-font-size: 1rem;
+    --nomal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+
+    /* font weight */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /* margin */
+    /* --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem; */
+
+    /* z-index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+}
+@media screen and (min-width: 1024px) {
+    :root{
+        --biggest-font-size: 4rem;
+        --h1-font-size: 2.5rem;
+        --h2-font-size: 1.5rm;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/* base */
+*,::before,::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+h1,h2,h3{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1024px;
+    margin-inline: 1.5rem;
+}
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+.section{
+    padding-block: 5rem 1rem;
+}
+.section__title{
+    font-size: var(--h1-font-size);
+    font-family: var(--title-color);
+    margin-bottom: 1.5rem;
+}
+.section__subtitle{
+    display: block;
+    font-size: var(--h2-font-size);
+    font-family: var(--subtitle-font);
+    color: var(--frist-color);
+    margin-bottom: .5rem;
+}
+.section__title,.section__subtitle{
+    text-align: center;
+}
+.main{
+    overflow: hidden;
+}
